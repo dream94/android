@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoreGame</string>
+    <string name="ready">Ready?\nTouch the screen!</string>
+    <string name="paused">Game is paused.\nTouch the screen\nto resume.</string>
+    <string name="game_over">Game over!\nTouch the screen\nto restart.</string>
+    <string name="your_time">Your time:</string>
+    <string name="game_url">dream9/coregame</string>
+</resources>
