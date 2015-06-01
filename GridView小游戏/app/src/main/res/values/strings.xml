@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Game1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">找出不一样颜色的方块</string>
+    <string name="start">开始</string>
+    <string name="pause">暂停</string>
+    <string name="over">游戏结束</string>
+</resources>
