@@ -80,7 +80,7 @@ public class GameStart extends Activity {
         }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                dialog.cancel();
             }
         }).create().show();
     }
