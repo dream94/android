@@ -9,13 +9,15 @@ import java.util.Random;
  */
 public class Application {
     public static int width;
-    public static  int height;
+    public static int height;
     public static int time = 30;      //游戏总的时间
 
     public static int[] color = {R.color.red, R.color.green, R.color.blue, R.color.juse, R.color.white};    //颜色种类
 
     //随机出现的词语
-    public static String[] data = {"中国","别墅","增添","秀丽","汁液","解释","土壤","瀑布"};
+    public static String[] data = {"中国","别墅","增添","秀丽","汁液","解释","瀑布",
+            "绿油油", "喜洋洋", "山海经", "天仙配",
+            "名胜古迹", "天下无双", "兵临城下", "卧虎藏龙"};
 
     public static String createChineseChar() {
         Random random = new Random();

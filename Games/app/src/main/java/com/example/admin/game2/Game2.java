@@ -8,6 +8,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -77,6 +78,7 @@ public class Game2 extends Activity implements View.OnClickListener{
             }
         };
         init();
+        Log.i("huang", "Game2:"+this.toString());
     }
 
     /**
@@ -149,5 +151,8 @@ public class Game2 extends Activity implements View.OnClickListener{
                 break;
         }
     }
-
+    public void retry(){
+        startActivity(new Intent(Game2.this, Game2.class));
+        finish();
+    }
 }

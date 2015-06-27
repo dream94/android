@@ -1,4 +1,4 @@
-package com.example.admin.game2;
+﻿package com.example.admin.game2;
 
 import android.app.Activity;
 import android.content.Context;

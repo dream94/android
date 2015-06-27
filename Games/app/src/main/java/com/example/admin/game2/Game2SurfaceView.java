@@ -32,6 +32,7 @@ public class Game2SurfaceView extends SurfaceView implements SurfaceHolder.Callb
     Canvas canvas;
     int startX = -1, startY = -1, endX = -1, endY = -1;         //开始位置，结束位置
     boolean isPress = false;
+    private static Game2 game2;
     public Game2SurfaceView(Context context, AttributeSet attrs) {
         super(context, attrs);
         holder = getHolder();
@@ -50,6 +51,8 @@ public class Game2SurfaceView extends SurfaceView implements SurfaceHolder.Callb
         }
         list = Game2.list;
         createWord();
+        game2 = (Game2)context;
+        Log.i("huang", "SurfaceView:"+game2.toString());
     }
 
     @Override
@@ -219,63 +222,84 @@ public class Game2SurfaceView extends SurfaceView implements SurfaceHolder.Callb
     //产生不同类型的词语（有向左构成的、有向右构成的、有向上构成的、有向下构成的、有向左上方、右上方、左下方、右下方）
     public static Word WordType(String s, Point start){    //start表示开始位置
         int r, len=s.length();
-        int x = start.x, y=start.y;
         boolean flag= false;
         Point end = null;
+        int temp;
         while(true){
+            int x = start.x, y=start.y;
             if(flag){         //已经产生了字符串摆放的类型
                 break;
             }
+            temp = 0;
             r= (int)(Math.random()*8);
             switch (r){
                 case 0:
                     if(x+1>=len&&!isPut(x, y, x-len+1, y, s)){
                         end = new Point(x-len+1, y);
                         flag = true;
+                        break;
                     }
-                    break;
+                    temp++;
                 case 1:
                     if(x+len-1<7&&!isPut(x, y, x+len-1, y, s)){
                         end = new Point(x+len-1, y);
                         flag = true;
+                        break;
                     }
-                    break;
+                    temp++;
                 case 2:
                     if(y+1>=len&&!isPut(x, y, x, y-len+1, s)){
                         end = new Point(x, y-len+1);
                         flag = true;
+                        break;
                     }
-                    break;
+                    temp++;
                 case 3:
                     if(y+len-1<7&&!isPut(x, y, x, y+len-1, s)){
                         end = new Point(x, y+len-1);
                         flag = true;
+                        break;
                     }
-                    break;
+                    temp++;
                 case 4:
                     if(x+1>=len&&y+1>=len&&!isPut(x, y, x-len+1, y-len+1, s)){
                         end = new Point(x-len+1, y-len+1);
                         flag = true;
+                        break;
                     }
-                    break;
+                    temp++;
                 case 5:
                     if(x+len-1<7&&y+len-1<7&&!isPut(x, y, x+len-1, y+len-1, s)){
                         end = new Point(x+len-1, y+len-1);
                         flag = true;
+                        break;
                     }
-                    break;
+                    temp++;
                 case 6:
                     if(x+len-1<7&&y+1>=len&&!isPut(x, y, x+len-1, y-len+1, s)){
                         end = new Point(x+len-1, y-len+1);
                         flag = true;
+                        break;
                     }
-                    break;
+                    temp++;
                 case 7:
                     if(x+1>=len&&y+len-1<7&&!isPut(x, y, x-len+1, y+len-1, s)){
                         end = new Point(x-len+1, y+len-1);
                         flag = true;
+                        break;
                     }
-                    break;
+                    temp++;
+                default:
+                    if(temp>=6){       //有一半以上拼接不成的话，则要改变开始位置
+                        if(x<6){
+                            start.x++;
+                        }else if(y<6){
+                            start.x = 0;
+                            start.y++;
+                        }else{        //所有都没效时，已经到了最后个节点
+                            game2.retry();
+                        }
+                    }
             }
         }
         Log.i("point", "("+start.x+","+start.y+") "+ "("+end.x+","+end.y+")");
