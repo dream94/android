@@ -40,7 +40,7 @@ public abstract class AndroidGame extends Activity implements Game{
         renderView = new AndroidFastRenderView(this, frameBuffer);
         audio = new AndroidAudio(this);
         vibration = new AndroidVibration(this);
-        //fileIO = new AndroidFileIO(getAssets());      //存在疑惑，不知文件名应如何写
+        //fileIO = new AndroidFileIO(getAssets());     
         input = new AndroidInput(this, renderView);
         graphics = new AndroidGraphics(frameBuffer);
         screen = getStartScreen();
