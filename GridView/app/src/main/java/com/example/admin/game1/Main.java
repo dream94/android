@@ -89,7 +89,6 @@ public class Main extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Main.this, GamePause.class));
-                finish();
             }
         });
     }
@@ -149,6 +148,7 @@ public class Main extends Activity {
         Application.blue = blue;
         Application.score = score;
         Application.time = time;
+        Log.i("huang", "store data");
     }
 
     class GridViewAdapter extends BaseAdapter{
@@ -187,5 +187,17 @@ public class Main extends Activity {
             }
             return textView;
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        SharedPreferences preferences = getSharedPreferences("game1", Context.MODE_PRIVATE);       //重新设置初始化数据
+        preferences.edit().putInt("count", 2).putInt("pos", -1).commit();
+        Application.red = 100;
+        Application.green = 100;
+        Application.blue = 100;
+        Application.score = 0;
+        Application.time = 60;
     }
 }

@@ -17,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main"></activity>
+        <activity android:name=".Main" android:launchMode="singleInstance"></activity>
         <activity android:name=".GamePause"></activity>
         <activity android:name=".GameOver"></activity>
     </application>
