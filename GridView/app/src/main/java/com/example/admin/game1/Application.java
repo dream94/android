@@ -1,5 +1,11 @@
 package com.example.admin.game1;
 
+import android.app.Activity;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 /**
  * 全局变量
  * Created by Admin on 2015/5/31.
@@ -13,4 +19,12 @@ public class Application {
     public static int blue = 100;
     public static int score = 0;
     public static int time = 60;
-}
+    public static List<Activity> activities = new ArrayList<Activity>();
+
+    public static void clearActivity(){
+        for(int t=0; t<activities.size(); ++t){
+            Activity temp = activities.get(t);
+            temp.finish();
+        }
+    }
+ }

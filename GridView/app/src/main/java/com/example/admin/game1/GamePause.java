@@ -45,6 +45,7 @@ public class GamePause extends Activity implements View.OnClickListener{
                 Application.score = 0;
                 Application.time = 60;
                 finish();
+                Application.clearActivity();
                 break;
         }
     }

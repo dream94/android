@@ -57,6 +57,7 @@ public class Main extends Activity {
                     intent.putExtra("score", score);
                     startActivity(intent);
                     finish();
+                    Application.clearActivity();
                 }else if(msg.what == 1){
                     scoretext.setText("得分:"+score);
                     timetext.setText("时间:"+time);
@@ -127,6 +128,9 @@ public class Main extends Activity {
         pos = preferences.getInt("pos", -1);     //如果是-1的话，则说明是第一次
         if(pos == -1){
             pos = (int)(Math.random()*count*count);
+        }
+        if(!Application.activities.contains(this)){
+            Application.activities.add(this);
         }
     }
 

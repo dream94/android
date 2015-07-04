@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
     <TextView
-        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="@string/title"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:id="@+id/title"
+        android:text="找出所有色块里颜色不同的一个"
+        android:textSize="20dp"
+        android:textColor="#FFD365"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:id="@+id/description"
         />
-    <Button
-            android:layout_width="250dp"
-            android:layout_height="80dp"
-            android:text="@string/start"
-            android:textSize="40sp"
-            android:id="@+id/start"
-            android:layout_below="@+id/title"
-            android:layout_centerInParent="true"
-            android:layout_margin="60dp"
-            />
-</RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:src="@drawable/kk"
+        android:layout_gravity="center"
+        />
+
+
+    <ImageButton
+        android:id="@+id/start"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/start"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="60dp"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>
