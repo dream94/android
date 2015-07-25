@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<ImageView android:layout_width="match_parent"
+	    android:layout_height="100dip"
+	    android:id="@+id/image"
+	    />
+	
+ 	<Button 
+ 	    android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="testPopupWindow"
+        android:layout_below="@id/image"
+        />
+ 	<Button android:id="@+id/btn1"
+ 	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gson解析"
+        android:layout_toRightOf="@id/btn"
+        android:layout_below="@id/image"
+ 	    />
+ 	
+	<com.component.PasswordEditText 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/btn"
+	    android:hint="input"
+	    android:layout_marginTop="10dip"
+	    android:id="@+id/edit"
+	    />
+	<Button android:id="@+id/btn2"
+ 	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解析edittext"
+        android:layout_below="@id/edit"
+ 	    />
+</RelativeLayout>

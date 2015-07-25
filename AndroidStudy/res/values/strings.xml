@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="select_head">选择头像</string>    
+	<string name="takephoto">拍照</string>
+	<string name="takefromalbum">从手机相册选择</string>
+    <string name="app_name">AndroidInternet</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="toast_neterr">网络不给力哟,检查网络再试试</string>
+    <string name="toast_loading">努力加载中...</string>
+    <string name="pulltorefresh">下拉刷新</string>
+    
+    <string name="toast_nobuygoods">啊哦~您还没有购买商品！ 去逛一逛</string>
+	<string name="toast_noorder">亲，您还没有相关订单哦！ 去逛一逛</string>
+	<string name="toast_nologistics">亲，您的订单没有物流记录哦，稍后再来试试</string>
+	<string name="toast_nocomment">亲，您还没有点评过商品</string>
+	<string name="toast_nosell">分享、点评商品，赚取佣金！ 赚取佣金攻略</string>
+	<string name="toast_nogoods">还没有添加商品，稍后再来看看</string>
+	<string name="toast_noaddress">亲，您还没有收货地址哦~</string>
+	<string name="heb_norecord">亲，您还没有账单记录哦~</string>
+	<string name="toast_noredbean">亲，您还没有红豆哦~</string>
+	<string name="toast_nostock">亲，您还没有相关的进货记录哦~</string>
+	<string name="toast_notrade">亲，您还没有相关交易哦~</string>
+	
+	<string name="heb_successopen">实名认证预计1个工作日完成，通过后即可从当天起获得收益</string>
+	<string name="know">知道了</string>
+	<string name="heb_norecharge">亲，您没有充值红额宝，没有相关收益</string>
+	<string name="heb_notrade">亲，您没有充值红额宝，没有相关交易</string>
+	<string name="toast_goodsnocomm">还没有评论哦~</string>
+	<string name="toast_sfzerr">输入正确的18位身份证号码</string>
+	<string name="toast_yzmerr">输入正确的验证码</string>
+	<string name="toast_yhkerr1">输入正确的银行卡号</string>
+	
+	<string name="toast_loginerr1">输入正确的账号与密码</string>
+	<string name="toast_loginerr2">输入正确的手机号码</string>
+	<string name="toast_loginerr3">输入正确的账号</string>
+	<string name="toast_loginerr4">账号与密码不匹配</string>
+	
+	<string name="toast_regierr1">输入正确的手机号码</string>
+	<string name="toast_regierr2">该手机号已经注册，是否要登录</string>
+	<string name="login">登录</string>
+	<string name="cancel">取消</string>
+	<string name="toast_regierr3">输入正确的验证码</string>
+	<string name="toast_regierr4">请求过于频繁，请在120秒后重新获取</string>
+	<string name="toast_regierr5">输入6-20位字母、数字或减号组合的密码</string>
+	
+	<string name="toast_fgtpwderr1">输入正确的手机号码</string>
+	<string name="toast_fgtpwderr2">请求过于频繁，请在120秒后重新获取</string>
+	<string name="toast_fgtpwderr3">输入正确的验证码</string>
+	<string name="toast_fgtpwderr4">输入6-20位字母、数字或减号组合的密码</string>
+	<string name="toast_fgtpwderr5">新密码不可以与旧密码一样</string>
+	
+	<string name="toast_mfypwderr1">输入正确的旧密码</string>
+	<string name="toast_mfypwderr2">新密码与重复密码不一致</string>
+	
+	<string name="toast_addaddresserr1">您有漏填哦，请填写全部信息</string>
+	<string name="toast_addaddresserr2">输入正确的手机号号码</string>
+	<string name="toast_addaddresserr3">输入正确的省市区</string>
+	<string name="toast_addaddresserr4">详细地址不能为空</string>
+	
+	<string name="toast_informationerr1">输入1-20位有效字符</string>
+	<string name="toast_informationerr2">账号必须以字母开头，可以使用6-20个字母、数字、下划线和减号</string>
+	<string name="dlg_informationerr3">账号修改一次后不能再更改，您确定要修改吗？</string>
+	<string name="confirm">确定</string>
+	<string name="toast_informationerr4">账号已经修改过一次，不能再修改</string>
+	
+	<string name="toast_yhkerr2">持卡人必须用银行卡开户时留下的姓名</string>
+	<string name="toast_yhkerr3">输入真实有效的银行卡账号</string>
+	<string name="toast_yhkerr4">输入正确的手机号码</string>
+	<string name="toast_yhkerr5">输入正确的验证码</string>
+	
+	<string name="toast_ordererr1">取消订单失败，此订单不存在！</string>
+	<string name="toast_ordererr2">不能取消，此订单已经审核！</string>
+	<string name="toast_ordererr3">不能取消，目前仅限未付款订单</string>
+	<string name="toast_ordererr4">确认失败，此订单不存在！</string>
+	<string name="toast_ordererr5">确认失败，此订单尚未审核！</string>
+	<string name="toast_ordererr6">确认失败，仅限平台已全部发货的采购单进行确认</string>
+	
+	<string name="toast_carterr1">请选择购物的商品</string>
+	<string name="toast_walleterr1">钱包可用余额不足，无法提现！</string>
+	<string name="toast_walleterr2">提现金额超过每日最高上限，无法提现</string>
+	
+	<string name="toast_managemoneyerr1">理财可用余额不足，无法提现！</string>
+	<string name="toast_managemoneyerr2">提现金额超过每日最高上限，无法提现！</string>
+	
+	<string name="dlg_goods_sharelogined">分享商品，赚佣金！</string>
+	<string name="dlg_goods_shareunlogin">分享</string>
+	<string name="toast_goodsaddcart">加入成功</string>
+	
+	<string name="toast_darencomm">登录后就能使用啦！</string>
+	<string name="register">注册</string>
+	
+	<string name="toast_submitordererr">请填写收货人信息</string>
+	<string name="dlg_regiredbean">恭喜亲获得500个红豆，注册即可领取，购买时抵扣现金使用哦!</string>
+	<string name="togetredbean">去领取</string>
+	<string name="dlg_getredbean">恭喜亲获得500个红豆，购买本活动专区商品可抵扣现金使用哦！</string>
+	<string name="goods_nouse">商品已失效</string>
+	<string name="settleaccount">结算</string>
+	<string name="dlg_settleaccounterr">请先删除已失效的商品，再进行结算</string>
+	<string name="dlg_carterr2">此商品已失效，无法加入购物车</string>
+	
+	<string name="toast_inputerr1">输入框不可以为空哦</string>
+	<string name="toast_inputerr2">不可以超过300个字哦</string>
+</resources>

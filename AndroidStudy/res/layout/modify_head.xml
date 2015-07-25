@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/top"
+        >
+        <TextView android:layout_width="match_parent"
+            android:layout_height="40.5dip"
+            android:text="@string/select_head"
+            android:layout_marginLeft="7.2dip"
+            android:layout_marginRight="7.2dip"
+            android:gravity="center"
+            android:textColor="#aaaaaa"
+            />
+
+        <Button
+            android:id="@+id/takephoto"
+            android:layout_width="match_parent"
+            android:layout_height="40.5dip"
+            android:layout_marginLeft="7.2dip"
+            android:layout_marginRight="7.2dip"
+            android:text="@string/takephoto"
+            android:background="@null"
+            android:textColor="#fc4643"
+             />
+        <Button
+            android:id="@+id/selectfromalbum"
+            android:layout_width="match_parent"
+            android:layout_height="40.5dip"
+            android:layout_marginLeft="7.2dip"
+            android:layout_marginRight="7.2dip"
+            android:text="@string/takefromalbum"
+            android:background="@null"
+            android:textColor="#fc4643"
+             />
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="40.5dip"
+            android:layout_marginLeft="7.2dip"
+            android:layout_marginRight="7.2dip"
+            android:layout_marginTop="7.2dip"
+            android:text="@string/cancel"
+            android:background="@null"
+            android:textColor="#fc4643"
+             />
+    </LinearLayout>
+</RelativeLayout>
