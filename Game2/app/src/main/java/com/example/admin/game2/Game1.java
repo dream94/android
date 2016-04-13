@@ -38,6 +38,7 @@ public class Game1 extends Activity {
     int pass = 0;
     int temp;         //temp随机产生的数字
     boolean check = true;
+	int check11 = 1;
 
     public int state = 0;        //当前所处的状态
     //游戏状态
